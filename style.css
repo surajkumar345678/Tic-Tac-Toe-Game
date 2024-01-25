@@ -46,7 +46,12 @@ body{
 
 }
 .msgContainer{
-    height: 20vmin;
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 #msg{
@@ -56,4 +61,10 @@ body{
 
 .hide{
     display: none;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
 }

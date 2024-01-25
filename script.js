@@ -23,14 +23,15 @@ const resetGame = () => {
     enableBoxes();
     msgContainer.classList.add("hide");
 };
-
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if (turnO) {
             box.innerText = "O";
+            box.classList.add("red");
             turnO = false;
         } else {
             box.innerText = "X";
+            box.classList.add("blue");
             turnO = true;
         }
         box.disabled = true;
