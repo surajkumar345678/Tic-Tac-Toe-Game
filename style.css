@@ -36,7 +36,7 @@ body{
     background-color: whitesmoke;
 }
 
-#resetBtn{
+#resetBtn, #newGameBtn{
     padding: 1rem;
     font-size: 1.25rem;
     background-color: chocolate;
@@ -44,4 +44,16 @@ body{
     border-radius: 1rem;
     border: none;
 
+}
+.msgContainer{
+    height: 20vmin;
+}
+
+#msg{
+    color: orangered;
+    font-size: 5vmin;
+}
+
+.hide{
+    display: none;
 }
