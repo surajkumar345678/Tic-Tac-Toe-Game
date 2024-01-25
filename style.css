@@ -1,13 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: aquamarine;
+body {
+    background: #1a2a6c;
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
     text-align: center;
 }
-.container{
+
+h1 {
+    padding-top: 5vh;
+    font-size: 8vmin;
+    color: white;
+}
+
+.container {
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -15,7 +24,7 @@ body{
 
 }
 
-.game{
+.game {
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -25,27 +34,51 @@ body{
     gap: 1.5vmin;
 }
 
-.box{
+.box {
     height: 18vmin;
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
-    color: orangered;
     background-color: whitesmoke;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+
 }
 
-#resetBtn, #newGameBtn{
+#resetBtn,
+#newGameBtn {
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: chocolate;
-    color: white;
+    background-color: white;
+    color: orangered;
     border-radius: 1rem;
     border: none;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+
 
 }
-.msgContainer{
+
+#resetBtn:hover,
+#newGameBtn:hover,
+.box:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.1);
+    font-size: 4vmin;
+    font-weight: bold;
+
+}
+
+.box:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.1);
+    font-size: 10vmin;
+    font-weight: bold;
+}
+
+.msgContainer {
     height: 100vmin;
     display: flex;
     justify-content: center;
@@ -54,17 +87,19 @@ body{
     gap: 4rem;
 }
 
-#msg{
-    color: orangered;
-    font-size: 5vmin;
+#msg {
+    color: white;
+    font-size: 10vmin;
 }
 
-.hide{
+.hide {
     display: none;
 }
-.red{
+
+.red {
     color: red;
 }
-.blue{
+
+.blue {
     color: blue;
 }
