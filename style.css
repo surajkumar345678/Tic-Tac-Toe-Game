@@ -21,7 +21,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .game {
@@ -43,7 +42,6 @@ h1 {
     font-size: 8vmin;
     background-color: whitesmoke;
     transition: transform 0.3s ease, font-size 0.3s ease;
-
 }
 
 #resetBtn,
@@ -55,8 +53,6 @@ h1 {
     border-radius: 1rem;
     border: none;
     transition: transform 0.3s ease, font-size 0.3s ease;
-
-
 }
 
 #resetBtn:hover,
@@ -66,15 +62,6 @@ h1 {
     opacity: 0.8;
     transform: scale(1.1);
     font-size: 4vmin;
-    font-weight: bold;
-
-}
-
-.box:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    transform: scale(1.1);
-    font-size: 10vmin;
     font-weight: bold;
 }
 
